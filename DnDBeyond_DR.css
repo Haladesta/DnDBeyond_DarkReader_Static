@@ -1,0 +1,632 @@
+
+::selection {
+    color: black !important;
+    background: white !important;
+}
+
+* {
+    scrollbar-color: #202324 #454a4d !important;
+}
+
+
+    /* -- Fonts -- */
+
+.ddb-homebrew-portal-item-separator:after,
+.starting-equipment-rule-slot::before,
+.tag,
+div.b-pagination ul.b-pagination-list li.b-pagination-item a,
+.b-pagination-item:not(.s-active),
+html .homebrew-comments #reply .h2 h2,
+.ddb-campaigns-detail-body-listing-unassigned-active-header-primary,
+html .select2-chosen,
+html .forum-thread-row .col-thread .title,
+html .forum-row .col-forum .title a,
+html .body-forum .listing .b-table-header .b-table-heading,
+html .body-forum .listing .b-table-header .b-table-heading a,
+header .homebrew-comments #reply .h2 h2,
+li div [id*="filter"] *,
+#content,
+[class*="label"],
+[class*="number"],
+[class*="heading"],
+[class*="name"]:not([class*="ddbc-item-name--rarity-"]),
+.ddbc-item-name--rarity-common,
+[class*="damage"],
+.integrated-dice__container *,
+.ct-skills__col--skill,
+.ddb-campaigns-listing-active-header * {
+    color: white !important;
+}
+
+*:not( [class*="active"] > *,
+.ct-skills__col--skill,
+.integrated-dice__container *,
+[class*="ddbc-item-name--rarity-"]) {
+    color: lightgray !important;
+}
+
+.marketplace-navigation__list-item.active a {
+    color: #e40712 !important;
+}
+
+table tbody tr td a[class*="tooltip"].tooltip-hover {
+    color: #9978f7 !important;
+}
+
+h4.individual-purchase-options__title {
+    color: #6a8fac !important;
+}
+
+
+    /* -- Icons/SVGs -- */
+
+.i-hamburger,
+.i-concentration,
+.i-homebrew,
+.i-favorite,
+.i-spell-melee,
+.i-spell-ranged,
+.i-strength-save,
+.i-dexterity-save,
+.i-constitution-save,
+.i-charisma-save,
+.i-wisdom-save,
+.i-intelligence-save,
+.i-type-acid,
+.i-type-bludgeoning,
+.i-type-cold,
+.i-type-fire,
+.i-type-force,
+.i-type-lightning,
+.i-type-necrotic,
+.i-type-piercing,
+.i-type-poison,
+.i-type-psychic,
+.i-type-radiant,
+.i-type-slashing,
+.i-type-thunder,
+.i-condition-blinded,
+.i-condition-charmed,
+.i-condition-deafened,
+.i-condition-exhaustion,
+.i-condition-exhausted,
+.i-condition-frightened,
+.i-condition-grappled,
+.i-condition-incapacitated,
+.i-condition-invisible,
+.i-condition-paralyzed,
+.i-condition-petrified,
+.i-condition-poisoned,
+.i-condition-prone,
+.i-condition-restrained,
+.i-condition-stunned,
+.i-condition-unconscious,
+.i-condition-white-blinded,
+.i-condition-white-charmed,
+.i-condition-white-deafened,
+.i-condition-white-exhaustion,
+.i-condition-white-exhausted,
+.i-condition-white-frightened,
+.i-condition-white-grappled,
+.i-condition-white-incapacitated,
+.i-condition-white-invisible,
+.i-condition-white-paralyzed,
+.i-condition-white-petrified,
+.i-condition-white-poisoned,
+.i-condition-white-prone,
+.i-condition-white-restrained,
+.i-condition-white-stunned,
+.i-condition-white-unconscious,
+.i-aoe-cone,
+.i-aoe-cube,
+.i-aoe-cylinder,
+.i-aoe-line,
+.i-aoe-sphere,
+.i-aoe-square,
+.i-artificer,
+.i-bard,
+.i-cleric,
+.i-druid,
+.i-paladin,
+.i-ranger,
+.i-sorcerer,
+.i-warlock,
+.i-wizard,
+.i-barbarian,
+.i-fighter,
+.i-monk,
+.i-rogue,
+.i-aberration,
+.i-beast,
+.i-celestial,
+.i-construct,
+.i-dragon,
+.i-elemental,
+.i-fey,
+.i-fiend,
+.i-giant,
+.i-humanoid,
+.i-monstrosity,
+.i-ooze,
+.i-plant,
+.i-undead,
+.i-ritual,
+.i-req-attunement,
+.i-legendary-monster,
+.i-checkmark,
+.i-partnered-content-small,
+.i-partnered-content-medium,
+.i-partnered-content-large,
+.i-copy,
+.i-download,
+.i-gift,
+.i-radio-checked,
+.i-radio-empty,
+.i-radio-checked-light,
+.ddb-statblock-item-label:before,
+.ct-ability-saving-throws-pane__icon,
+.tip:after,
+.tooltip-body-statblock-item-label:before,
+.ddb-pronunciation-clip,
+.quick-menu-item-trigger,
+.ddb-campaigns-character-card-footer-links-item:before,
+.ddbc-svg--dark,
+.user:after,
+.post-content:before,
+.ddbc-tab-options__header-heading [class*="i-"],
+.ddbc-healing-icon .ddbc-tooltip,
+.ct-sidebar__pane-content .ddbc-damage-type-icon .ddbc-tooltip,
+.ct-ability-pane__icon.ddbc-ability-icon,
+.ddbc-damage-type-icon__img,
+[class*="icon"]:not(
+    [class*="beyond20"],
+    [class*="rest"] *,
+    [class*="advantage"],
+    [class*="filter"] *,
+    [class*="currency"],
+    [class*="summary"],
+    [class*="header-icon"],
+    .monster-icon,
+    .skill-icon,
+    .ct-sidebar__control-icon,
+    .mm-menu-list-item__icon,
+    .input-select__button-icon,
+    .builder-sections-sheet-icon,
+    .ddbc-ability-icon,
+    .i-radio-checked,
+    .col-status,
+    .col-status *,
+    .u-icon-online,
+    .ddbc-svg--light,
+    .ddbc-note-components__component,
+    .ct-sidebar__pane-control-icon,
+    .whats-next-action-icon,
+    .ct-character-header-desktop__button-icon,
+    .help-text-manager-icon
+),
+[id*="ProficiencyDouble"] circle,
+[class*="sidebar"]+path,
+[fill="#FEFEFE"] {
+    filter: invert(1) !important;
+    opacity: 1 !important;
+}
+
+[fill="#FEFEFE"] {
+   filter: invert(0.9) !important;
+}
+
+img[src="https://media-waterdeep.cursecdn.com/attachments/thumbnails/1/219/250/111/mma1.png"] {
+    filter: invert(1) brightness(2) !important;
+}
+
+
+    /* -- Backgrounds -- */
+
+.ddbc-checkbox__input,
+[class*="checkbox"]:not( 
+    [class*="filter"] *
+),
+[class*="button"] [class*="content"],
+[class*="slot"] *,
+.ct-slot-manager__slot {
+    background: none !important;
+}
+
+html,
+body,
+body>*,
+tbody th,
+tbody td,
+thead th,
+thead td,
+.ddbeb-modal__content,
+.u-dropDownMenu,
+.invalid,
+.fullscreen-modal-content,
+.textarea-editor,
+.character-builder,
+.ajs-header,
+.ajs-footer,
+.mce-menu-item-normal.mce-active,
+.ui-widget-content,
+.ddbc-dice-roll-group-manager__groups,
+.profile-field-group,
+#tinymce.mce-content-body,
+.tooltip,
+.combatant-card__left-bit,
+.chip,
+.product-hero__avatar::after,
+.ddb-homebrew-portal-wrapper,
+.sidenav-next-nav,
+.top-next-nav,
+#site-main,
+.ct-sidebar__pane-gap,
+.ct-editor-box,
+.classes-manage-hitpoints {
+    background: none !important;
+    background-color: #1a1a1a !important;
+}
+
+textarea,
+aside,
+aside[class*="-"],
+select,
+input:not(.es-form-field-query),
+blockquote,
+blockquote:before,
+html body blockquote[class*="-"],
+html body blockquote[class*="_"],
+[class*="stat-block"],
+[class*="search-box"],
+[class*="sort-box"],
+[class*="mce-container"],
+[class*="select"]:not( 
+    [class*="slide"],
+    [class*="selection-box-svg"],
+    [class*="builder"],
+    .ddb-search-filter-item,
+    .fc-selected,
+    .fc-fake,
+    .Race-selector-container,
+    .select2-arrow,
+    .ddb-homebrew-create-form-fields-item,
+    .ddbc-svg,
+    .starting-equipment-rule-slot,
+    .starting-equipment-rule-slot-selection,
+    .image,
+    .ddb-homebrew-portal-item-selector-label,
+    .ddb-homebrew-portal-item-selector,
+    [class*="close"],
+    .party-selectors__stats,
+    .selected-filters,
+    .select2-hidden-accessible,
+    .select2-highlighted,
+    .select2-result.select2-result-selectable *,
+    .ct-description-pane__editor--select,
+    .ct-value-editor__property--select
+),
+[class*="button"]:not(
+    [class*="hit-point-adjuster"],
+    .mm-grid-button__background,
+    .release-type-icon,
+    .close,
+    .mm-grid-button__label,
+    .mm-grid-button__label-text,
+    .marketplace-button--view-details-small,
+    .marketplace-button--view-details-small *,
+    .portal-listing-item-body-buttons,
+    .ddb-login-container__body *,
+    .ct-theme-button--filled,
+    .ct-theme-button--filled *,
+    .ajs-primary,
+    button span
+),
+[class*="detail__tag"]:not(
+    [class*="label"],
+    [class*="list"],
+    [class*="tags"]
+),
+[class*="collapsible"]:not(
+    [class*="icon"],
+    [class*="filter"],
+    .marketplace-listing,
+    .collapsible-header-trigger,
+    .ct-sidebar__pane .ct-spell-manager__spell .ddbc-collapsible__header .marketplace-listing,
+    .marketplace-listing *,
+    .j-collapsible.ddb-collapsible,
+    .j-collapsible__content.ddb-collapsible__content,
+    .listing-card,
+    .ct-sidebar__pane .ddbc-collapsible,
+    .ct-sidebar__pane .ct-spell-manager__spell .ddbc-collapsible__header,
+    .ct-sidebar__pane .ct-class-spell-manager__group > .ddbc-collapsible__content,
+    .ct-sidebar__pane .ct-spell-slot-manager__group > .ddbc-collapsible__content,
+    .ct-sidebar__pane .ct-equipment-manage-pane__custom-items,
+    .ct-sidebar__pane .ct-equipment-manage-pane:nth-child(2) > *,
+    .ct-sidebar__pane .ddbc-collapsible__content .ct-equipment-manage-pane__inventory,
+    .ct-equipment-manage-pane > .ddbc-collapsible.ddbc-collapsible--opened > .ddbc-collapsible__content,
+    .ct-extra-manage-pane> .ddbc-collapsible.ddbc-collapsible--opened > .ddbc-collapsible__content,
+    .ct-extra-manage-pane__listing *:not(.ddbc-collapsible__content),
+    .ct-spell-manager *:not(.ddbc-collapsible__content),
+    .ct-equipment-manage-pane__item .ddbc-collapsible__header,
+    .ct-equipment-manage-pane__item .ddbc-collapsible__header *:not(.ddbc-collapsible__content),
+    .ct-condition-manage-pane__conditions .ddbc-collapsible__header-footer
+),
+.listing:not(.listing-rpgspell),
+[class*="pane-content"],
+[class^="Basic-Text-Frame"],
+.ddb-homebrew-portal-item-separator:after,
+.starting-equipment-rule-slot::before,
+.currency-list-item-row,
+.ddb-site-banner--dismiss,
+.beyond20-roll-cell,
+.b-userAction-item a:hover,
+.product-hero .marketplace-featured-tag,
+.ddb-campaigns-simple-list-item:not(.invalid),
+.listing .info,
+.ddbc-ability-score-manager__component-value,
+.ct-spells-filter__box,
+.ct-inventory-filter__box,
+.ct-extras-filter__box,
+.custom-background-editor,
+.notification,
+.es-form:not(.es-form-global),
+.es-form-field-query:not(.es-form-global *),
+.ddb-top-result,
+.ddb-top-result:before,
+.ddb-top-result:after,
+.beyond20-dice-roller-content,
+.ct-condition-manage-pane__condition-content,
+.ct-feats-manage-pane__feat-content,
+.integrated-dice__container:hover,
+.ddb-campaigns-detail-body-listing-campaign-link,
+.vex-content,
+.listing-card__content,
+.ddb-auth-link-manager__card,
+.p-nav-item a,
+.p-user-content,
+.p-user-stats,
+html .comment .p-comment-user-background,
+html .body-forum li.b-pagination-item .s-active,
+html .p-forum-a .announcements .forum-thread-row,
+html .listing-forum-search .announcements .forum-thread-row,
+html #site .forum-row .status-icon,
+html #site .forum-thread-row .status-icon,
+html #site .forum-row td,
+html #site .forum-thread-row td,
+html .comment .p-comment-container,
+html .p-comments-a .p-comment-wrapper,
+.mce-flow-layout-item,
+.section-posts .p-article-a,
+.section-changelog .p-article-a,
+.ddb-subscriptions-purchase-current,
+.filter-modal,
+.marketplace-navigation__list,
+.ddbeb-flyout,
+.ddbeb-flyout__arrow,
+.combat-tracker,
+.combat-tracker-page__content-section,
+.combatants__header,
+.flyout-input-number__input-wrapper,
+.combatant-card__mid-bit,
+.combatant-card__right-bit,
+.combatant-card__hp-current,
+.encounter-details-summary,
+.encounter-details-monster,
+.encounter-monster__summary,
+.monster-row__line,
+.monster-row__body,
+.monster-row__cell--drag-handle,
+.encounter-builder-sidebar,
+.encounter-builder-sidebar>*,
+.monster-filters,
+.ddb-tabs__tab>a[aria-selected="true"],
+.builder-type-options,
+.compendium-toc-block-text,
+.ddb-collapsible-filter__box,
+.sidebar-menu-top-link,
+.quick-menu,
+.class-spell-list-header,
+.ct-optional-feature,
+.lb-outerContainer,
+.compendium-disclaimer-footer,
+.compendium-toc-full-text,
+.comment .p-comment-container,
+.comment .p-comment-user-background,
+.encounter-details__content-section,
+.encounter-row,
+.ddb-homebrew-create-form-footer-text,
+.post-excerpt__content,
+.ddbc-number-bar__option,
+.ddb-campaigns-character-card,
+.ddb-campaigns-character-card::after,
+.ddb-campaigns-invite-wrapper,
+.list-row,
+html body.body-rpgcharacter-sheet,
+.ddbc-select,
+.ddbc-creature-block,
+.ct-health-summary__adjuster-field-input,
+.ddb-campaigns-list-item-body-sharing-box,
+.collapsible-header,
+.filter-listing-item,
+.equipment-manager-inventory-header,
+.ability-score-calc-component-value,
+.ddb-campaigns-list-item,
+.ddb-campaigns-list-item::before,
+.b-breadcrumb,
+.more-info,
+.base-class-callout,
+.list-column-header,
+.ddb-campaigns-list-item::after {
+    border-image-source: none !important;
+    background: none !important;
+    background-image: none !important;
+    background-color: #333 !important;
+}
+
+.ui-state-hover, 
+.ui-widget-content .ui-state-hover, 
+.ui-widget-header .ui-state-hover, 
+.ui-state-focus, 
+.ui-widget-content .ui-state-focus, 
+.ui-widget-header .ui-state-focus, 
+.ui-button:hover, 
+.ui-button:focus {
+    background: none !important;
+    background-color: #3875d7 !important;
+}
+
+html .ct-spell-caster__casting-action-count,
+html .ddbc-tab-options__header-heading--is-active,
+html .classes-manage-hitpoints-actions .character-button,
+.ct-theme-button--filled {
+    background: none !important;
+    background-color: #8e2424 !important;
+}
+
+div .ddbc-tab-options--layout-pill .ddbc-tab-options__header-heading {
+    background-color: transparent;
+}
+
+.ct-spell-caster__casting-action-count,
+.ddbc-tab-options__header-heading--is-active,
+.classes-manage-hitpoints-actions .character-button {
+    background-color: #c53131 !important;
+}
+
+.mce-btn.mce-active,
+html body .comment blockquote.source-quote,
+tbody th,
+tbody td {
+    border-image-source: none !important;
+    background: none !important;
+    background-image: none !important;
+    background-color: #222 !important;
+}
+
+#poll-vote,
+.tag,
+div.b-pagination ul.b-pagination-list li.b-pagination-item a,
+.b-pagination-item:not(.s-active),
+.comment blockquote.source-quote .quote-source {
+    border-image-source: none !important;
+    background: none !important;
+    background-color: #111 !important;
+}
+
+.listing-card__body,
+.range-slider__bar-segment:not([class*="selected"]),
+.mm-grid-button__label {
+    background: none !important;
+    background-color: rgba(51,51,51,0.7) !important;
+}
+
+.beyond20-quick-roll-tooltip,
+span.ddbc-number-bar__option:hover {
+    background-color: #888 !important;
+}
+
+.alertify .ajs-dialog,
+.ddbc-number-bar__option.ddbc-number-bar__option--active,
+.ddbc-number-bar__option.ddbc-number-bar__option--implied {
+    background: none !important;
+    background-color: #666 !important;
+}
+
+.mce-btn {
+    background: none !important;
+}
+
+.tooltip::after,
+.marketplace-item__description-overlay {
+    background: linear-gradient(0deg, #1a1a1a 6%, hsla(0, 0%, 100%, 0)) !important;
+}
+
+[class*="truncated"]:after {
+    background: linear-gradient(0deg, #333 6%, hsla(0, 0%, 100%, 0)) !important;
+}
+
+.ddbc-no-proficiency-icon {
+    background-color: #b0b0b0 !important;
+}
+
+
+    /* -- Borders, Padding, etc. -- */
+
+.section-posts .p-article-a::after,
+.section-changelog .p-article-a::after,
+.compendium-toc-block:after,
+.compendium-toc-full:after,
+blockquote:after,
+blockquote.base-class-callout::before,
+blockquote.base-class-callout::after,
+.more-info::after,
+.collapsible-body::after {
+    display: none !important;
+}
+
+.currency-list-item-row,
+.race-detail-racial-traits .race-detail-racial-trait-name,
+.builder-page-body .collapsible,
+.list-row {
+    margin: 5px;
+}
+
+.marketplace-navigation__list {
+    padding: 10px;
+}
+
+.ct-combat__summary-label--outline,
+.ct-inspiration__label {
+    text-shadow: 1px 1px 0 #454545, -1px -1px 0 #454545, -1px 1px 0 #454545, 1px -1px 0 #454545 !important;
+}
+
+.ddb-homebrew-portal-item-separator:after,
+.race-detail-racial-traits .race-detail-racial-trait-name,
+.builder-page-body .collapsible,
+blockquote.base-class-callout,
+.ct-spell-caster__casting-action-count {
+    border: 1px solid white !important;
+}
+
+.ct-spells-spell+.ct-spells-spell,
+.ct-inventory-item+.ct-inventory-item,
+.ddbc-attack-table .ddbc-combat-attack+.ddbc-combat-attack {
+    border-top: 1px solid gray !important;
+}
+
+.ddb-campaigns-character-card::after {
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.ddb-top-result:after,
+.ddb-top-result:before,
+.ddb-campaigns-list-item::before,
+.ddb-campaigns-list-item::after {
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.race-detail-racial-traits .collapsible-body,
+.builder-page-body .collapsible .collapsible-body {
+    border: none !important;
+}
+
+.more-info,
+.section-posts .p-article-a,
+.section-changelog .p-article-a,
+.compendium-toc-block-text,
+.compendium-toc-full-text {
+    border-bottom: 1px solid white;
+}
+
+.reset-button-container.adv-filter {
+    right: 15px !important;
+    width: 19.5% !important;
+}
+
+.mce-btn i {
+    text-shadow: none !important;
+}
