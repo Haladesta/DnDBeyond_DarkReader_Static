@@ -202,9 +202,13 @@ h4.individual-purchase-options__title {
     .ct-sidebar__pane-control-icon,
     .whats-next-action-icon,
     .ct-character-header-desktop__button-icon,
-    .help-text-manager-icon
+    .help-text-manager-icon,
+    .ddbc-twice-proficiency-icon--modified,
+    .ddbc-twice-proficiency-icon--modified *
 ),
-[id*="ProficiencyDouble"] circle,
+[id*="ProficiencyDouble"] circle:not(
+    .ddbc-twice-proficiency-icon--modified *
+),
 [class*="sidebar"]+path,
 [fill="#FEFEFE"] {
     filter: invert(1) !important;
