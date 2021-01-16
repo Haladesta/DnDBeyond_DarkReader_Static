@@ -401,6 +401,7 @@ section.primary-content:after,
 .vex-content,
 .listing-card__content,
 .ddb-auth-link-manager__card,
+.ac_odd:not(.ac_over),
 .p-nav-item a,
 .p-user-content,
 .p-user-stats,
@@ -482,6 +483,7 @@ html body.body-rpgcharacter-sheet,
     background-color: #333 !important;
 }
 
+.ac_over,
 .body-rpgmagicitem .listing-filters .form-field-text-field > div:not(:first-child).grissel-pete-who-even-is-this-guy,
 .ui-state-hover, 
 .ui-widget-content .ui-state-hover, 
@@ -502,7 +504,7 @@ html .classes-manage-hitpoints-actions .character-button,
     background: none !important;
     background-color: #8e2424 !important;
 }
-
+.ac_results li.ac_over a, .ac_results li.ac_over > div,
 div .ddbc-tab-options--layout-pill .ddbc-tab-options__header-heading {
     background-color: transparent;
 }
