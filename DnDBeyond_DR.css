@@ -206,7 +206,8 @@ h4.individual-purchase-options__title {
     .ddbc-twice-proficiency-icon--modified,
     .ddbc-twice-proficiency-icon--modified *,
     .ct-dice-preference-manager__primary-info-icon,
-    .ct-pane-menu__item-prefix > *
+    .ct-pane-menu__item-prefix > *,
+    .gamelog-button__icon
 ),
 [id*="ProficiencyDouble"] circle:not(
     .ddbc-twice-proficiency-icon--modified *
@@ -233,7 +234,9 @@ img[src="https://media-waterdeep.cursecdn.com/attachments/thumbnails/1/219/250/1
     [class*="filter"] *
 ),
 [class*="button"] [class*="content"],
-[class*="slot"] *,
+[class*="slot"] *:not(
+    .ddbc-attunement-slot__preview
+),
 .ct-slot-manager__slot {
     background: none !important;
 }
@@ -254,6 +257,7 @@ thead td,
 .character-builder,
 .ajs-header,
 .ajs-footer,
+.GameLogEntry_Message__1GoY3.GameLogEntry_Other__2PSbv,
 .mce-menu-item-normal.mce-active,
 .ui-widget-content,
 .ddbc-dice-roll-group-manager__groups,
@@ -327,7 +331,9 @@ html body blockquote[class*="_"],
     .ct-theme-button--filled,
     .ct-theme-button--filled *,
     .ajs-primary,
-    button span
+    button span,
+    .ct-character-header-desktop__button-icon,
+    .gamelog-button__icon
 ),
 [class*="detail__tag"]:not(
     [class*="label"],
@@ -376,6 +382,7 @@ html body blockquote[class*="_"],
 .ddb-homebrew-portal-item-separator:after,
 .starting-equipment-rule-slot::before,
 .currency-list-item-row,
+.ct-creature-pane__tag,
 .ddb-site-banner--dismiss,
 .beyond20-roll-cell,
 .b-userAction-item a:hover,
