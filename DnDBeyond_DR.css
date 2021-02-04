@@ -246,7 +246,7 @@ img[src="https://media-waterdeep.cursecdn.com/attachments/thumbnails/1/219/250/1
 
 html,
 body,
-body>*,
+body > *:not(#noty_layout__bottomRight),
 tbody th,
 tbody td,
 thead th,
@@ -489,6 +489,7 @@ html body.body-rpgcharacter-sheet,
 .more-info,
 .base-class-callout,
 .list-column-header,
+body.body-rpgcharacter-sheet .ct-sidebar__portal + div:not(#noty_layout__bottomRight) > div > div > div,
 .ddb-campaigns-list-item::after {
     border-image-source: none !important;
     background: none !important;
