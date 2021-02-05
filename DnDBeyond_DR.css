@@ -178,6 +178,7 @@ h4.individual-purchase-options__title {
 .ct-sidebar__pane-content .ddbc-damage-type-icon .ddbc-tooltip,
 .ct-ability-pane__icon.ddbc-ability-icon,
 .ddbc-damage-type-icon__img,
+.sidebar__control,
 [class*="icon"]:not(
     [class*="beyond20"],
     [class*="rest"] *,
