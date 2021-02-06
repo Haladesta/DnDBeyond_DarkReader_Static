@@ -190,6 +190,9 @@ h4.individual-purchase-options__title {
     [class*="currency"],
     [class*="summary"],
     [class*="header-icon"],
+    .ddbc-proficiency-level-icon *,
+    .ddbc-proficiency-level-icon[class*="icon--modified"],
+    .ddbc-proficiency-level-icon[class*="icon--modified"] *,
     .monster-icon,
     .ddbc-combat-attack__icon,
     .ddbc-bonus-positive-svg,
@@ -211,23 +214,17 @@ h4.individual-purchase-options__title {
     .whats-next-action-icon,
     .ct-character-header-desktop__button-icon,
     .help-text-manager-icon,
-    .ddbc-twice-proficiency-icon--modified,
-    .ddbc-twice-proficiency-icon--modified *,
     .ct-dice-preference-manager__primary-info-icon,
     .ct-pane-menu__item-prefix > *,
     .gamelog-button__icon
 ),
-[id*="ProficiencyDouble"] circle:not(
-    .ddbc-twice-proficiency-icon--modified *
-),
-[class*="sidebar"]+path,
-[fill="#FEFEFE"] {
+[class*="sidebar"]+path {
     filter: invert(1) !important;
     opacity: 1 !important;
 }
 
-[fill="#FEFEFE"] {
-   filter: invert(0.9) !important;
+[fill="#FEFEFE"]:not(.ddbc-inspiration-box-svg #InspirationBoxSvg-Group-4 *) {
+    fill: #1a1a1a !important;
 }
 
 img[src="https://media-waterdeep.cursecdn.com/attachments/thumbnails/1/219/250/111/mma1.png"] {
@@ -597,8 +594,8 @@ span.ddbc-number-bar__option:hover {
     background: linear-gradient(0deg, #333 6%, hsla(0, 0%, 100%, 0)) !important;
 }
 
-.ddbc-no-proficiency-icon {
-    background-color: #b0b0b0 !important;
+.ddbc-no-proficiency-icon--modified {
+    background-color: black !important;
 }
 
 
@@ -632,6 +629,7 @@ blockquote.base-class-callout::after,
     text-shadow: 1px 1px 0 #454545, -1px -1px 0 #454545, -1px 1px 0 #454545, 1px -1px 0 #454545 !important;
 }
 
+.gamelog-button,
 .ddb-homebrew-portal-item-separator:after,
 .race-detail-racial-traits .race-detail-racial-trait-name,
 .builder-page-body .collapsible,
