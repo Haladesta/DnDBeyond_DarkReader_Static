@@ -41,10 +41,13 @@ html .b-pagination-b li.b-pagination-item a:visited,
     color: white !important;
 }
 
-*:not( [class*="active"] > *,
-.ct-skills__col--skill,
-.integrated-dice__container *,
-[class*="ddbc-item-name--rarity-"]) {
+*:not(
+    [class*="active"] > *,
+    .ct-skills__col--skill,
+    .integrated-dice__container *,
+    [class*="ddbc-item-name--rarity-"],
+    .MuiAlert-icon *
+) {
     color: lightgray !important;
 }
 
@@ -71,7 +74,6 @@ h4.individual-purchase-options__title {
     [class*="currency"],
     [class*="summary"],
     [class*="header-icon"],
-    .character-card__overlay-icon,
     .ddbc-proficiency-level-icon *,
     .ddbc-proficiency-level-icon[class*="icon--modified"],
     .ddbc-proficiency-level-icon[class*="icon--modified"] *,
@@ -98,7 +100,12 @@ h4.individual-purchase-options__title {
     .help-text-manager-icon,
     .ct-dice-preference-manager__primary-info-icon,
     .ct-pane-menu__item-prefix > *,
-    .gamelog-button__icon
+    .gamelog-button__icon,
+    .ddbc-no-proficiency-icon,
+    .ddbc-resistance-icon,
+    .ddbc-immunity-icon,
+    .ddbc-vulnerability-icon,
+    .ddbc-attunement-svg 
 ),
 [class*="sidebar"]+path,
 .i-hamburger,
@@ -224,6 +231,14 @@ h4.individual-purchase-options__title {
     opacity: 1 !important;
 }
 
+.ddbc-no-proficiency-icon {
+    filter: invert(0.8) !important;
+    opacity: 1 !important;
+}
+
+
+
+
 [fill="#FEFEFE"]:not(.ddbc-inspiration-box-svg #InspirationBoxSvg-Group-4 *) {
     fill: #1a1a1a !important;
 }
@@ -270,7 +285,6 @@ thead td,
 #tinymce.mce-content-body,
 .tooltip,
 .combatant-card__left-bit,
-.character-card__overlay-message,
 .chip,
 .product-hero__avatar::after,
 .ddb-homebrew-portal-wrapper,
@@ -279,7 +293,6 @@ thead td,
 #site-main,
 .ct-sidebar__pane-gap,
 .ct-editor-box,
-.abstract-character__cell,
 .ddb-market-checkout-form-address-inner,
 .ddb-market-checkout-form-payment-container,
 .classes-manage-hitpoints {
@@ -304,8 +317,6 @@ html body blockquote[class*="_"],
     [class*="slide"],
     [class*="selection-box-svg"],
     [class*="builder"],
-    .input-select__dropdown-option:hover,
-    .input-select__dropdown-option *,
     #form-field-filter-prefix > div,
     .ct-preferences-pane__field,
     .ddb-search-filter-item,
@@ -333,7 +344,6 @@ html body blockquote[class*="_"],
     [class*="hit-point-adjuster"],
     .mm-grid-button__background,
     .release-type-icon,
-    .character-card__overflow-button,
     .close,
     .mm-grid-button__label,
     .paypal-button-container,
@@ -349,7 +359,9 @@ html body blockquote[class*="_"],
     .ajs-primary,
     button span,
     .ct-character-header-desktop__button-icon,
-    .gamelog-button__icon
+    .gamelog-button__icon,
+    .ct-currency-button__currency,
+    .ct-currency-button__currency *
 ),
 [class*="detail__tag"]:not(
     [class*="label"],
@@ -409,13 +421,10 @@ html body blockquote[class*="_"],
 .ddb-site-banner--dismiss,
 .beyond20-roll-cell,
 .ddb-market-cart-contents-items,
-html .popup-arrow + *,
-.context-menu-option,
 .b-userAction-item a:hover,
 .product-hero .marketplace-featured-tag,
 .ddb-campaigns-simple-list-item:not(.invalid),
 .listing .info,
-.input-select__dropdown-option-input-checkbox,
 section.primary-content > .details-container,
 section.primary-content:after,
 .details-container:after,
@@ -525,7 +534,6 @@ body.body-rpgcharacter-sheet .ct-sidebar__portal + div:not(#noty_layout__bottomR
     background-color: #333 !important;
 }
 
-.input-select__dropdown-option:hover,
 .ac_over,
 .body-rpgmagicitem .listing-filters .form-field-text-field > div:not(:first-child).grissel-pete-who-even-is-this-guy,
 .ui-state-hover, 
@@ -651,8 +659,6 @@ blockquote.base-class-callout::after,
     text-shadow: 1px 1px 0 #454545, -1px -1px 0 #454545, -1px 1px 0 #454545, 1px -1px 0 #454545 !important;
 }
 
-.input-checkbox.input-checkbox-label,
-.input-select__dropdown,
 .gamelog-button,
 .ddb-homebrew-portal-item-separator:after,
 .race-detail-racial-traits .race-detail-racial-trait-name,
@@ -705,7 +711,25 @@ blockquote.base-class-callout,
     text-shadow: none !important;
 }
 
-.input-select__dropdown-wrapper {
-    border: none !important;
-    box-shadow: none !important;
+.MuiDialog-container {
+    background-color: #111 !important;
+}
+
+.MuiPaper-root:not(.MuiAlert-root) {
+    background-color: #222 !important
+}
+
+.MuiAlert-standardWarning {
+    background-color: rgb(170, 109, 25) !important;
+}
+
+.MuiAlert-icon {
+    color: white !important;
+}
+
+.MuiList-root {
+    background-color: #111 !important
+}
+.MuiList-root li, .MuiBox-root {
+    background-color: #333 !important
 }
